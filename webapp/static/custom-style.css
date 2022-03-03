@@ -1,0 +1,102 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("/static/bank.jpeg");
+}
+
+#masterhead{
+    text-align: center;
+    margin: auto;
+    margin-top: 22vh;
+    border: 2px solid black;
+    border-radius: 10px;
+    background: #e6ffff;
+    width: 40vw;
+    padding: 10px 0 10px 0;
+}
+
+#high{
+    margin: auto;
+    margin-top: 1vh;
+    background: #e6ffff;
+    width: 70vw;
+    border: 3px solid black;
+    border-radius: 30px;
+}
+
+#panel{
+    min-width: 50vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.form-group{
+    min-width: 20vw;
+}
+
+.title{
+    text-align: center;
+}
+
+.rbody{
+}
+
+.predict{
+    padding: 10px 0 10px 0;
+}
+
+.predictbtn{
+    min-width: 25vw;
+}
+
+#result{
+    margin-top: 30vh;
+    background: #e6ffff;
+    min-width: 20vw;
+    max-width: 35vw;
+    min-height: 30vh;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+#rhead{
+    margin-top: 4vh;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#rstatement{
+    margin-top: 2vh;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 5vh;
+}
+
+#approved{
+    display: block;
+    margin: auto;
+    max-width: 15vw;
+    height: auto;
+    margin-bottom: 2vh;
+}
+
+.name{
+    display: inline;
+    color: red;
+}
+
+.amount{
+    display: inline;
+    color: darkblue;
+}
+
+p{
+    display: inline;
+}
+
+#required{
+    font-size: 15px;
+    display: block;
+    text-align: right;
+}

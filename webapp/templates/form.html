@@ -1,0 +1,127 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<h1 id="masterhead">Predict Customer's Loan Eligibility Status</h1>
+<div id="high">
+    <div class='title container'>
+        <h2>{{ form_title }}</h2>
+    </div>
+    <div class='rbody container'>
+        <form method="POST" id="panel" action='/analyse' role='form'>
+            <div class='row'>
+                <div class='form-group col-xs-5 col-lg-5'>
+                    <label>Full Name: *</label>
+                    <input type="text" name="name" class='form-control' required>
+                </div>
+            </div>
+
+
+
+            <div class='row'>
+                <div class='form-group col-xs-5 col-lg-5'>
+                    <label>Gender:</label>
+                    <select class="form-control form-select" aria-label="Default select example" name="Gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+            </div>
+
+
+
+            <div class='row'>
+                <div class='form-group col-xs-5 col-lg-5''>
+                <label>Marital Status:</label>
+                <select class="form-control form-select" aria-label="Default select example" name="Married">
+                    <option value="yes">Married</option>
+                    <option value="no">Not Married</option>
+                </select>
+            </div>
+        </div>
+        <div class=' row'>
+                    <div class='form-group col-xs-5 col-lg-5'>
+                        <label>No. of Dependents:</label>
+                        <select class="form-control form-select" aria-label="Default select example" name="Dependents">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3+</option>
+                        </select>
+                    </div>
+                </div>
+                <div class='row'>
+                    <div class='form-group col-xs-5 col-lg-5'>
+                        <label>Education:</label>
+                        <select class="form-control form-select" aria-label="Default select example" name="Education">
+                            <option value="graduated">Graduated</option>
+                            <option value="not graduated">Not Graduated</option>
+                        </select>
+                    </div>
+                </div>
+                <div class='row'>
+                    <div class='form-group col-xs-5 col-lg-5'>
+                        <label>Self Employed:</label>
+                        <select class="form-control form-select" aria-label="Default select example"
+                            name="Self_Employed">
+                            <option value="yes">Self Employed</option>
+                            <option value="no">Not Self Employed</option>
+                        </select>
+                    </div>
+                </div>
+                <div class='row'>
+                    <div class='form-group col-xs-5 col-lg-5'>
+                        <label>Applicant Income: (in rupees)</label>
+                        <input type="number" name="ApplicantIncome" class='form-control'>
+                    </div>
+                </div>
+                <div class='row'>
+                    <div class='form-group col-xs-5 col-lg-5'>
+                        <label>Coapplicant Income: (in rupees)</label>
+                        <input type="number" name="CoapplicantIncome" class='form-control'>
+                    </div>
+                </div>
+                <div class='row'>
+                    <div class='form-group col-xs-5 col-lg-5'>
+                        <label>Loan Amount: (in rupees)*</label>
+                        <input type="number" name="LoanAmount" class='form-control' required>
+                    </div>
+                </div>
+                <div class='row'>
+                    <div class='form-group col-xs-5 col-lg-5'>
+                        <label>Loan Amount Term (in days) :</label>
+                        <input type="number" name="Loan_Amount_Term" class='form-control'>
+                    </div>
+                </div>
+                <div class='row'>
+                    <div class='form-group col-xs-5 col-lg-5'>
+                        <label>Credit History:</label>
+                        <select class="form-control form-select" aria-label="Default select example"
+                            name="Credit_History">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                </div>
+                <div class='row'>
+                    <div class='form-group col-xs-5 col-lg-5'>
+                        <label>Property Area:</label>
+                        <select class="form-control form-select" aria-label="Default select example"
+                            name="Property_Area">
+                            <option value="urban">Urban</option>
+                            <option value="semi">Semi Urban</option>
+                            <option value="rural">Rural</option>
+                        </select>
+                    </div>
+                </div>
+                <div class='row'>
+                    <div class='form-group predict col-xs-5 col-lg-5'>
+                        <input type="submit" name="submit" value="Predict" class='btn btn-info predictbtn'>
+                    </div>
+                </div>
+        </form>
+        <span id="required">* required</span>
+    </div>
+</div>
+
+
+{% endblock %}

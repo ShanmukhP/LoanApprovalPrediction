@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div id="result" class="container">
+    <h3 id="rhead">Prediction</h3>
+    <div id="rstatement">
+        {%if status==1 %}
+        <img id="approved" src="/static/approved.png" />
+        <p> Name : </p><span class="name">{{ name }}</span><br>
+        <p> Amount : INR </p><span class="amount">{{ amount }}</span><br>
+        <p> It is safe to grant loan to this customer </p>
+        {% endif %}
+        {%if status==0 %}
+        <img id="approved" src="/static/rejected.png" />
+        <p> Name : </p><span class="name">{{ name }}</span><br>
+        <p> Amount : INR </p><span class="amount">{{ amount }}</span><br>
+        <p> It is not safe to grant loan to this customer </p>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
