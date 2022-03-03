@@ -1,9 +1,9 @@
 # Loan Approval Prediction
 
-## Preview
+## Preview :
 ![](Project_Demo.gif)
 
-<h2>Main Approach</h2>
+<h2>Main Approach :</h2>
 <p>Use of ensemble learning techniques with below given algorithms for predicting possible loan defaulters.</p>
 
 <h2>Algorithms :</h2>
@@ -22,5 +22,5 @@
     </ul>
 </ul>
 
-<h2>User Interface</h2>
+<h2>User Interface :</h2>
 <p>Web Application (Flask)</p>
