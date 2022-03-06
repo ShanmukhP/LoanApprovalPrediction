@@ -14,7 +14,7 @@ Use of *ensemble learning* techniques with below given algorithms for predicting
     - AdaBoost
     - XGBoost
 - Meta Model
-    - XG Boost
+    - XG Boost    
     
     
 > ## User Interface :
