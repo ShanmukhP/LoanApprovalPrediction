@@ -16,6 +16,5 @@ Use of *ensemble learning* techniques for predicting possible loan defaulters.
 - Meta Model
     - XG Boost    
 
-> ## User Interface :
->
-> Web Application (Flask)
+## User Interface :
+ Web Application (Flask)
