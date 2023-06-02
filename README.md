@@ -4,7 +4,7 @@
 ![](Project_Demo.gif)
 
 ## Main Approach :
-Use of *ensemble learning* techniques with below given algorithms for predicting possible loan defaulters.
+Use of *ensemble learning* techniques for predicting possible loan defaulters.
 
 ## Algorithms :
 - Base Stack
@@ -15,8 +15,7 @@ Use of *ensemble learning* techniques with below given algorithms for predicting
     - XGBoost
 - Meta Model
     - XG Boost    
-    
-    
+
 > ## User Interface :
 >
 > Web Application (Flask)
